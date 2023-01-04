@@ -1,0 +1,144 @@
+.section {
+    width: 100%;
+    text-align: center;
+}
+
+.title-section {
+    color: #ffffff;
+    padding: 5px;
+    margin-top: 70px;
+    border: 1px solid #dc3318;
+    border-right: none;
+    border-left: none;
+    font-size: 28px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: linear-gradient(to bottom, #dc3318 50%, #26292c 50%);
+}
+
+.icon-list {
+    list-style: none;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.img-icon {
+    width: 100%;
+    background-color: #353638;
+    transition: all 2.0s;
+}
+
+.img-icon:hover {
+    cursor: pointer;
+    background-color: #dc3318;
+}
+
+.list-product {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.products {
+    width: 80%;
+    margin-top: 20%;
+    margin-left: 10%;
+    transition: all 1.2s;
+}
+
+.products:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.name-product {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    padding: 7px;
+    margin-top: 10%;
+    transition: all 2.0s;
+    background-image: linear-gradient(to right, #26292c, #26292c, #dc3318);
+}
+
+.name-product:hover {
+    color: #dc3318;
+    background-color: #ffffff;
+    background-image: none;
+    cursor: pointer;
+}
+
+.price-product {
+    text-align: center;
+    font-size: 1.3em;
+    padding: 1px;
+    color: #ffffff;
+    transition: all 2.0s;
+    background-image: linear-gradient(to left, #26292c, #26292c, #dc3318);
+}
+
+.price-product:hover {
+    color: #dc3318;
+    background-color: #ffffff;
+    background-image: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 850px) and (max-width: 1200px) {
+
+    .icon-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .list-product {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 850px) {
+
+    .title-section {
+        margin-top: 50px;
+        font-size: 25px;
+    }
+
+    .icon-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .list-product {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .products {
+        width: 65%;
+        margin-left: 18%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+
+    .title-section {
+        margin-top: 75px;
+    }
+
+    .icon-list {
+        grid-template-columns: 1fr;
+    }
+
+    .icon {
+        width: 85%;
+        margin-left: 8%;
+    }
+
+    .list-product {
+        grid-template-columns: 1fr;
+    }
+
+    .products {
+        width: 65%;
+        margin-left: 18%;
+    }
+}
